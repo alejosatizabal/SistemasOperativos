@@ -9,3 +9,24 @@ Se desarrollaron tres programas
   <li> <a href="https://github.com/alejosatizabal/SistemasOperativos/blob/master/2019_05_24/basico.c">basico.c</a></li>
   <li> <a href="https://github.com/alejosatizabal/SistemasOperativos/blob/master/2019_05_24/libfun.c">libfun.c</a></li>
   <li> <a href="https://github.com/alejosatizabal/SistemasOperativos/blob/master/2019_05_24/libfun.h">libfun.h</a></li>
+</ul>
+Para complilar el programa se llevan a cabo los siguientes pasos:
+
+<ul>
+  <li>Generar la librería</li>
+</ul>
+
+gcc -c libfun.c -o libfun.o
+ar rcs libfun.a libfun.o
+
+<ul>
+  <li>En el paso anterios se generó el archivo libfun.a. Ahora enlazaremos el programa basico.c con la librería libfun.a</li>
+</ul>
+
+gcc basico.c -L. -lfun -o basico
+
+<ul>
+  <li>Finalmente, el programa se ejecuta:</li>
+</ul>
+
+./basico
