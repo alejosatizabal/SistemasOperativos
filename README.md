@@ -5,4 +5,3 @@ Este repositorio contiene los códigos relativos a diferentes actividades desarr
 
 # Clases
 
-Hola
