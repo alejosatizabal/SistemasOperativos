@@ -6,6 +6,6 @@ Después se mostró la forma como se genera una librería de enlace estático y 
 Se desarrollaron tres programas
 
 <ul>
-  <li> basico.c </li>
-  <li> libfun.c </li>
-  <li> libfun.h </li>
+  <li> <a href="https://github.com/alejosatizabal/SistemasOperativos/blob/master/2019_05_24/basico.c">basico.c</a></li>
+  <li> <a href="https://github.com/alejosatizabal/SistemasOperativos/blob/master/2019_05_24/libfun.c">libfun.c</a></li>
+  <li> <a href="https://github.com/alejosatizabal/SistemasOperativos/blob/master/2019_05_24/libfun.h">libfun.h</a></li>
