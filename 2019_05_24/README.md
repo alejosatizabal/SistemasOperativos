@@ -4,3 +4,8 @@ En esta clase se hizo una revisión muy rápida de un programa sencillo en C que
 Después se mostró la forma como se genera una librería de enlace estático y como la funcionalidad implementada en esta es invocada desde un programa en C.
 
 Se desarrollaron tres programas
+
+<ul>
+  <li> basico.c </li>
+  <li> libfun.c </li>
+  <li> libfun.h </li>
