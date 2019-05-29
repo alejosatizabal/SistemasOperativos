@@ -16,23 +16,17 @@ Para complilar el programa se llevan a cabo los siguientes pasos:
   <li>Generar la librería</li>
 </ul>
 
-gcc -c libfun.c -o libfun.o
-ar rcs libfun.a libfun.o
+<pre><code>gcc -c libfun.c -o libfun.o
+ar rcs libfun.a libfun.o</code></pre>
 
 <ul>
-  <li>En el paso anterios se generó el archivo libfun.a. Ahora enlazaremos el programa basico.c con la librería libfun.a</li>
+  <li>En el paso anterios se generó el archivo <code>libfun.a</code>. Ahora enlazaremos el programa <code>basico.c</code> con la librería <code>libfun.a</code></li>
 </ul>
 
-gcc basico.c -L. -lfun -o basico
+<pre><code>gcc basico.c -L. -lfun -o basico</code></pre>
 
 <ul>
   <li>Finalmente, el programa se ejecuta:</li>
 </ul>
 
-./basico
-
-<pre>pre</pre>
-
-<code>code</code>
-
-<pre><code>pre code</code></pre>
+<pre><code>./basico</code></pre>
