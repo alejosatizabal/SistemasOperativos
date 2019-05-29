@@ -5,4 +5,4 @@ Este repositorio contiene los códigos relativos a diferentes actividades desarr
 
 # Clases
 
-<a href="https://github.com/alejosatizabal/SistemasOperativos">2019_05_24</a>
+<a href="https://github.com/alejosatizabal/SistemasOperativos/tree/master/2019_05_24">2019_05_24</a>
