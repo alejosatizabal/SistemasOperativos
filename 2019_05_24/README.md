@@ -30,3 +30,9 @@ gcc basico.c -L. -lfun -o basico
 </ul>
 
 ./basico
+
+<pre>pre</pre>
+
+<code>code</code>
+
+<pre><code>pre code</code></pre>
