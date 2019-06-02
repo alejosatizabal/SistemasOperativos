@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Lenguaje C - 101
 
 En esta clase se hizo una revisión muy rápida de un programa sencillo en C que imprime el mensaje hola mundo
@@ -31,16 +30,3 @@ ar rcs libfun.a libfun.o</code></pre>
 </ul>
 
 <pre><code>./basico</code></pre>
-=======
-# Repositorio curso Sistemas Operativos
-## Autor: Alejandro Satizabal - alejandro.satizabal@correounivalle.edu.co
-## Cód: 1726041
-
-Este repositorio contiene los códigos relativos a diferentes actividades desarrolladas en el curso de Sistemas Operativos - Univalle - Mayo-Septiembre 2019
-
-# Clases
-
-<a href="https://github.com/alejosatizabal/SistemasOperativos/tree/master/2019_05_24">2019_05_24</a>
-
-<a href="https://github.com/alejosatizabal/SistemasOperativos/tree/master/2019_05_31">2019_05_31</a>
->>>>>>> 944551559e889afecd5c2449d579a2593c4f315d
