@@ -9,4 +9,3 @@ Este repositorio contiene los códigos relativos a diferentes actividades desarr
 <a href="https://github.com/alejosatizabal/SistemasOperativos/tree/master/2019_05_24">2019_05_24</a>
 
 <a href="https://github.com/alejosatizabal/SistemasOperativos/tree/master/2019_05_31">2019_05_31</a>
->>>>>>> 944551559e889afecd5c2449d579a2593c4f315d
