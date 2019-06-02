@@ -30,3 +30,5 @@ ar rcs libfun.a libfun.o</code></pre>
 </ul>
 
 <pre><code>./basico</code></pre>
+
+-
