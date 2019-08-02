@@ -53,7 +53,7 @@ int main(int argc, char *argv[]) {
     segundosA = (double)(tA_fin - tA_ini) / CLOCKS_PER_SEC;
 	printf("Fuera del for se demora: %.16g milisegundos\n", segundosA * 1000.0);
   
-	segundosB = (double)(tA_fin - tA_ini) / CLOCKS_PER_SEC;
+	segundosB = (double)(tB_fin - tB_ini) / CLOCKS_PER_SEC;
 	printf("Dentro del for se demora: %.16g milisegundos\n", segundosB * 1000.0);
 
     return 0;
