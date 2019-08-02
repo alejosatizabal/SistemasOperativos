@@ -17,18 +17,18 @@ double segundosA, segundosB;
 void *worker(void *arg) {
     int i;
 	
-	// TIEMPO A-Inicio
+	// TIEMPO A-Inicio-fuera del for
 	tA_ini = clock();
     for (i = 0; i < loops; i++) {
         cerrar_puerta(door);
-        // TIEMPO B-Inicio
+        // TIEMPO B-Inicio-dentro del for
         tB_ini = clock();
         counter++;
         abrir_puerta(door);
-        // TIEMPO B-Fin
+        // TIEMPO B-Fin-dentro del for
         tB_fin = clock();
     }
-    // TIEMPO A-Fin
+    // TIEMPO A-Fin-fuera del for
     tA_fin = clock();
 
     return NULL;
@@ -51,10 +51,12 @@ int main(int argc, char *argv[]) {
     // printf("Final value   : %d\n", counter);
     
     segundosA = (double)(tA_fin - tA_ini) / CLOCKS_PER_SEC;
-	printf("Fuera del for se demora: %.16g milisegundos\n", segundosA * 1000.0);
+	//printf("Fuera del for se demora: %.16g milisegundos\n", segundosA * 1000.0);
+	printf("Fuera del for se demora: %.16g milisegundos\n", segundosA);
   
 	segundosB = (double)(tB_fin - tB_ini) / CLOCKS_PER_SEC;
-	printf("Dentro del for se demora: %.16g milisegundos\n", segundosB * 1000.0);
+	//printf("Dentro del for se demora: %.16g milisegundos\n", segundosB * 1000.0);
+	printf("Dentro del for se demora: %.16g milisegundos\n", segundosB);
 
     return 0;
 }
