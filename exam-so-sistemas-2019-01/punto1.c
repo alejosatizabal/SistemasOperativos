@@ -51,12 +51,10 @@ int main(int argc, char *argv[]) {
     // printf("Final value   : %d\n", counter);
     
     segundosA = (double)(tA_fin - tA_ini) / CLOCKS_PER_SEC;
-	//printf("Fuera del for se demora: %.16g milisegundos\n", segundosA * 1000.0);
-	printf("Fuera del for se demora: %.16g milisegundos\n", segundosA);
+	printf("Fuera del for se demora: %.16g milisegundos\n", segundosA * 1000.0);
   
 	segundosB = (double)(tB_fin - tB_ini) / CLOCKS_PER_SEC;
-	//printf("Dentro del for se demora: %.16g milisegundos\n", segundosB * 1000.0);
-	printf("Dentro del for se demora: %.16g milisegundos\n", segundosB);
+	printf("Dentro del for se demora: %.16g milisegundos\n", segundosB * 1000.0);
 
     return 0;
 }
