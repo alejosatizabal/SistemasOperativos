@@ -1,39 +1,9 @@
-# Sensor de temperatura (simulado) y ThingSpeak
-
-A
+# Sensor de temperatura (simulado) y ThingSpeak que corre sobre Raspbian Virtualizado
 
 ---
 
-# Quick start
+Se sacan cuentas para openWeather (genera datos de clima) y de ThingSpeak (graficador de las estadisticas de clima)
 
-La forma rápida de llevar a cabo esta guía es:
-
----
-
-# Requerimientos
-
-Para llevar a cabo esta práctica es necesario tener cuenta en los siguientes sitios:
-
-
-De cada uno de estos sitios se deben obtener unas llaves que permitan el acceso a los *web services* de cada uno de ellos.
-
-## OpenWeatherMap
-
-Una vez entra al sitio web con su usuario registrado, visitar [este enlace](https://home.openweathermap.org/api_keys).
-
-## ThingSpeak
-
-Una vez entra al sitio web con su usuario registrado se hace necesario crear un *Channel*. 
-Una vez se crea el canal se debe visitar la pestaña asociada al canal llamada **API Keys**.
-Para efectos de esta práctica nos interesa la que dice **Write API Key**.
-
-## Descargar este repositorio
-
-Abra una terminal y ubicado en el directorio `${HOME}` del usuario ejecute el comando:
-
-```
-git clone https://github.com/josanabr/RPiThingSpeak.git
-```
 
 ---
 
@@ -116,12 +86,6 @@ Una vez la máquina termina de arrancar el login del usuario es **pi** y el pass
 Para ejecutar periódicamente el script se hará uso del servicio `cron` de Unix.
 Ingrese via `ssh` a la máquina virtual desplegada en la [sección anterior](#despliegue-de-sistema-operativo-raspbian).
 
-```
-ssh -p 2222 pi@localhost
-```
-
-El usuario es `pi` y su password es `osboxes.org`.
-
 Para crear las tareas que se quieren ejecutar de forma periódica se hace uso del comando `cron` como sigue:
 
 ```
@@ -139,8 +103,6 @@ Adicionar las siguiente líneas:
 
 Esto lo que indica es que cada dos minutos, 0, 2, 4, ..., 58; minutos se ejecuta el programa `readSensor.sh`.
 De otro lado, `subirDatosTS.sh` se va a ejecutar también cada dos minutos pero al minuto, 1, 3, 5, ..., 59.
-
-**NOTA** Si su usuario no es `pi` por favor hacer los ajustes en la entrada al cron para indicar la ruta `home` adecuada de su usuario.
 
 ---
 
