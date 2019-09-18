@@ -1,4 +1,4 @@
-#Monitoreo del comportamiento del Dòlar en una jornada de comercio
+Monitoreo del comportamiento del Dòlar en una jornada de comercio
 
 Para esta practica se monitorea la pagina web Set-fx.com que presenta un dato actualizado en tiempo real, de las variaciones del valor del dólar durante una jornada de intercambio.
 
