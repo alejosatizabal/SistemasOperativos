@@ -1,20 +1,6 @@
 # Sensor de temperatura (simulado) y ThingSpeak
 
-Este repositorio busca presentar un escenario donde una máquina virtual que corre [Raspbian](https://www.raspbian.org/) toma datos de un sensor de temperatura y los envía a la nube.
-
-* [Quick start](#quick-start)
-* [Requerimientos](#requerimientos)
-  * [OpenWeatherMap](#openweathermap)
-  * [ThingSpeak](#thingspeak)
-  * [Descargar este repositorio](#descargar-este-repositorio)
-* [Desarrollo de la práctica](#desarrollo-de-la-práctica)
-  * [Preparación de scripts](#preparación-de-scripts)
-    * [Simulando el sensor de temperatura](#simulando-el-sensor-de-temperatura)
-      * [Un script que engloba lo anterior](#un-script-que-engloba-lo-anterior)
-      * [Leer los datos de dev00](#leer-los-datos-de-dev00)
-    * [Subir los datos a ThingSpeak](#subir-los-datos-a-thingspeak)
-  * [Despliegue de sistema operativo Raspbian](#despliegue-de-sistema-operativo-raspbian)
-  * [Programando la ejecucion del script de forma periódica](#programando-la-ejecucion-del-script-de-forma-periódica)
+A
 
 ---
 
@@ -22,18 +8,12 @@ Este repositorio busca presentar un escenario donde una máquina virtual que cor
 
 La forma rápida de llevar a cabo esta guía es:
 
-* Cumplir con todos los items de la sección [Requerimientos](#requerimientos).
-* [Desplegar el sistema operativo Raspbian](#despliegue-de-sistema-operativo-raspbian)
-* [Programar la ejecución de los scripts](#programando-la-ejecucion-del-script-de-forma-periódica)
-
 ---
 
 # Requerimientos
 
 Para llevar a cabo esta práctica es necesario tener cuenta en los siguientes sitios:
 
-* [OpenWeatherMap](https://openweathermap.org/)
-* [ThingSpeak](https://thingspeak.com/)
 
 De cada uno de estos sitios se deben obtener unas llaves que permitan el acceso a los *web services* de cada uno de ellos.
 
@@ -164,39 +144,3 @@ De otro lado, `subirDatosTS.sh` se va a ejecutar también cada dos minutos pero 
 
 ---
 
-# Detalles de bajo nivel
-
-El archivo `weather.txt` debe tener un contenido similar a este:
-
-```
-{"coord":{"lon":-76.51,"lat":3.43},"weather":[{"id":802,"main":"Clouds","description":"scattered clouds","icon":"03d"}],"base":"stations","main":{"temp":29,"pressure":1012,"humidity":51,"temp_min":29,"temp_max":29},"visibility":10000,"wind":{"speed":7.2,"deg":320},"clouds":{"all":40},"dt":1567635927,"sys":{"type":1,"id":8590,"message":0.006,"country":"CO","sunrise":1567594816,"sunset":1567638627},"timezone":-18000,"id":3687925,"name":"Cali","cod":200}
-```
-
-Para una mejor visualización de este contenido se puede ejecutar el siguiente comando:
-
-```
-python -m json.tool weather.txt
-```
-
-Para obtener un dato en particular ejecutar el siguiente comando:
-
-Humedad:
-
-```
-./readWeatherJSON.py main humidty
-```
-
-Temperatura:
-
-```
-./readWeatherJSON.py main temp
-```
-
-Velocidad del viento:
-
-```
-./readWeatherJSON.py wind speed
-```
----
-
-<sup>[osboxes](#osboxes)</sup> https://www.ostechnix.com/osboxes-free-unixlinux-virtual-machines-for-vmware-and-virtualbox/
