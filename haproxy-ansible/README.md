@@ -4,7 +4,7 @@ Alejandro Satizabal - 1726041<br>
 
 <hr>
 
-Para este trabajo tuvimos la dificultad de desplegar las máquinas virtuales en AWS, por tanto, tomamos la opción de manejar el despliegue y aprovisionamiento de las maquinas virtuales de forma local, usando <b>Vagrant</b> y <b>Ansible</b>
+Para este trabajo tuvimos la dificultad de desplegar las máquinas virtuales en AWS, por tanto, tomamos la opción de manejar el despliegue y aprovisionamiento de las máquinas virtuales de forma local, usando <b>Vagrant</b> y <b>Ansible</b>
 
 <hr>
 
