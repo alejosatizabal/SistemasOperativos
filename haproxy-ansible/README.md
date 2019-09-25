@@ -1,4 +1,4 @@
-Integrantes:<br
+Integrantes:<br>
 Jesús Ramírez - 1731388<br>
 Alejandro Satizabal - 1726041<br>
 
