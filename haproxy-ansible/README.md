@@ -2,6 +2,9 @@ Integrantes:<br
 Jesús Ramírez - 1731388<br>
 Alejandro Satizabal - 1726041<br>
 
+## Video demostrativo:
+<a href="https://www.youtube.com/watch?v=jiZksAmInKc">Video en YouTube</a>
+
 ## Códigos usados:
 <a href="https://github.com/alejosatizabal/SistemasOperativos/tree/master/haproxy-ansible/haproxy1/">haproxy.cfg</a>
 <pre><code>
