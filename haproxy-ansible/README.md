@@ -6,7 +6,7 @@ Alejandro Satizabal - 1726041<br>
 <a href="https://www.youtube.com/watch?v=jiZksAmInKc">Video en YouTube</a>
 
 ## Códigos usados:
-<a href="https://github.com/alejosatizabal/SistemasOperativos/tree/master/haproxy-ansible/haproxy1/">haproxy.cfg</a>
+<a href="https://github.com/alejosatizabal/SistemasOperativos/tree/master/haproxy-ansible/haproxy1/haproxy.cfg">haproxy.cfg</a>
 <pre><code>
 global
         log /dev/log   local0
