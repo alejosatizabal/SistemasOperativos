@@ -1,0 +1,37 @@
+---
+
+
+- hosts: all
+  become: yes   
+
+  tasks:
+
+  - name: install haproxy
+    apt: name=haproxy update_cache=yes state=latest
+    
+  - name: Enable init script
+    replace: dest='/etc/default/haproxy' 
+         regexp='ENABLED=0'
+         replace='ENABLED=1'   
+         
+  - name: cambiar haproxy cfg
+    command: mv haproxy.cfg haproxy.cfg.original
+    args:
+     chdir: /etc/haproxy
+
+  - name: actualizar haproxy
+    template:
+      src: ./haproxy1/haproxy.cfg
+      dest: /etc/haproxy/haproxy.cfg
+      
+  - name: start haproxy
+    systemd:
+      name: haproxy
+      enabled: yes
+      state: started
+      
+  - name: restart haproxy
+    systemd:
+      name: haproxy
+      enabled: yes
+      state: reloaded
